@@ -1,3 +1,3 @@
 # echo
 
-Print back the command the arguments passed to the echo binary.
+Print back to the console the arguments passed to the echo binary.
