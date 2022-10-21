@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "hello-world/rust-hello-world",
+    "echo/rust-echo",
+    "guessing-game/rust-guessing-game"
+]
