@@ -1,0 +1,4 @@
+Do you prefer Rust or Go?
+Personnaly Rust is my favorite language, but Go looks so easy to use.
+So what do you think ?
+How do you consider yoursef: a Rustacean or a Gopher ?

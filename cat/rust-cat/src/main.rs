@@ -6,6 +6,7 @@ use std::process;
 use thiserror::Error;
 
 const BINARY_NAME: &str = "rust-cat";
+const NB_ARGS: usize = 1;
 
 #[derive(Error, Debug)]
 enum CatError {
@@ -38,8 +39,8 @@ fn main() {
 }
 
 fn extract_filename() -> Result<String, CatError> {
-    match env::args().len().cmp(&2) {
-        Ordering::Equal => Ok(env::args().skip(1).take(1).collect::<String>()),
+    match env::args().skip(1).count().cmp(&NB_ARGS) {
+        Ordering::Equal => Ok(env::args().skip(1).take(NB_ARGS).collect::<String>()),
         _ => Err(CatError::BadUsage),
     }
 }

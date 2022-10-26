@@ -4,5 +4,6 @@ members = [
     "hello-world/rust-hello-world",
     "echo/rust-echo",
     "guessing-game/rust-guessing-game",
-    "cat/rust-cat"
+    "cat/rust-cat",
+    "sed/rust-sed"
 ]
